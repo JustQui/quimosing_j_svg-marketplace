@@ -8,8 +8,17 @@
 
 body {
     font-size: 16px;
-    background-color: white;
-    color: black;
+    background-color: rgb(84, 57, 44);
+    color: rgb(30, 23, 23);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.grid {
+    display: grid;
+    padding-left: 15px;
+    padding-right: 15px;
+    grid-template-columns: repeat(12, 70px);
+    grid-column-gap: 30px;
 }
 
 .hidden { display: none; }
@@ -19,14 +28,18 @@ body {
 }
 
 .wrapper {
-    width: 45%;
+    width: 200px;
     display: inline-block;
-
-    padding: 1em;
+    margin: 10px;
+    padding: 20px;
 }
 
-.wrapper img { 
-    width: 100%;
+.wrapper:hover {
+    width: 220px;
+    transition: 0.5s ease-out;
+    transform-origin: 50%;
+    filter: drop-shadow(7px 10px 2px rgb(0 0 0 / 0.4));
+    cursor: pointer;
 }
 
 #smalltext { transition: all 0.5s ease; transform-origin: 50%;}
@@ -34,3 +47,25 @@ body {
 #newBadge:hover #bg_circle { fill: orange; }
 
 #newBadge:hover #smalltext { fill: white; transform: rotate(130deg); }
+
+#main-header{
+    background-color: rgb(242, 198, 140);
+    padding: 30px;
+    text-align: center;
+}
+
+#main-header h2 {
+    font-size: 60px;
+    color:rgb(94, 68, 55);
+}
+
+#header-logo {
+    width: 270px;
+    height: 100px;
+    grid-column: 1/4;
+}
+
+#main-footer {
+    background-color: rgb(42, 29, 10);
+    padding: 50px;
+}

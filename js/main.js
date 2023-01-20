@@ -11,7 +11,8 @@ querySelector is the method (function) that makes the connection between JS and 
 */
 
 // step 1 - make the connection to the element(s) you want to interact with
-const vectorGraphic = document.querySelector('#newBadge');
+const vectorGraphic = document.querySelector("#bubbleTea", "#coffee", "#cafe", "#coffeeBeans", "#latte", "#moka", "#sign", "#tables", "#tea", "#location");
+
 
 function logThisId() {
     console.log('clicked on this element:', this.id);
